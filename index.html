@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Social Sidebar -->
+    <div class="social-sidebar">
+        <a href="https://www.linkedin.com/in/sameer-garg-239a40271/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Smeerdev" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+
+    <!-- 1. Global / Nav -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">PORTFOLIO</a>
+            <nav class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#contact-footer">About</a>
+                <a href="#about">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact-footer">Contact</a>
+            </nav>
+            <div class="nav-right">
+                <a href="#contact-footer" class="btn btn-primary btn-pill hire-me">Hire Me</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Fixed Social Sidebar -->
+    <div class="social-sidebar">
+        <a href="https://www.linkedin.com/in/sameer-garg-239a40271/" aria-label="LinkedIn" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/Smeerdev" aria-label="GitHub" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://leetcode.com/u/sameergarg916/" aria-label="LeetCode" title="LeetCode" target="_blank"><i class="fa-solid fa-code"></i></a>
+    </div>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="hero" class="fade-in-section">
+            <!-- Center Video -->
+            <video id="hero-video" src="Untitled design.mp4" loop playsinline></video>
+
+            <div class="hero-content-wrapper">
+                <!-- Bottom Left: Content -->
+                <div class="hero-text">
+                    <h1 class="hero-greeting">Hi, I'm Sameer Garg,</h1>
+                    <h2 class="hero-role">Software Engineer — GenAI & Full-Stack Developer</h2>
+                    <p class="secondary-text bio">
+                        I build AI-powered tools and full-stack apps — from RAG pipelines and multi-agent systems to production booking platforms.
+                    </p>
+                    <div class="btn-group">
+                        <a href="#projects" class="btn btn-primary btn-pill">View My Work</a>
+                        <a href="#contact-footer" class="btn btn-outline btn-pill">Contact Me</a>
+                        <a href="https://drive.google.com/file/d/1Mib-pso51niI296kE1SmNkwCcvAN0eLY/view?usp=sharing" target="_blank" class="btn btn-outline btn-pill">
+                            <i class="fa-solid fa-file-arrow-down" style="margin-right: 8px;"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bottom Right: Play Button -->
+                <div class="media-widget">
+                    <button id="video-toggle" class="video-toggle-btn" aria-label="Play Video">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="media-info">
+                        <i class="fa-solid fa-star" style="color: var(--accent-color); font-size: 0.7rem;"></i>
+                        <span>Play Reel</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
+            </div>
+        </section>
+
+        <!-- 2. About & Skills Section -->
+        <section id="about" class="fade-in-section" style="position: relative;">
+            <!-- Decorative Badges -->
+            <div style="position: absolute; top: -30px; left: 10%; font-size: 2.5rem; color: rgba(255,255,255,0.1); transform: rotate(-15deg);"><i class="fa-brands fa-python"></i></div>
+            <div style="position: absolute; top: -50px; right: 15%; font-size: 3rem; color: rgba(255,255,255,0.08); transform: rotate(15deg);"><i class="fa-brands fa-react"></i></div>
+            <div style="position: absolute; top: 10px; right: 5%; font-size: 2rem; color: rgba(255,255,255,0.05); transform: rotate(25deg);"><i class="fa-solid fa-database"></i></div>
+
+            <div class="section-content" style="text-align: center;">
+                <span class="tag" style="display: inline-block; margin-bottom: 1rem;">Technical Stack</span>
+                <h2 class="section-title" style="margin-bottom: 1rem;">My Skillset</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 4rem; font-size: 1.1rem;">The core technologies I use to build scalable applications.</p>
+                <div class="skills-grid" style="text-align: left;">
+                    <!-- Card 1: Core Dev -->
+                    <div class="skill-card">
+                        <h3>Core Dev</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>C++</span><span>85%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar" style="--skill-width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Python</span><span>90%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar" style="--skill-width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>SQL</span><span>75%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar" style="--skill-width: 75%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>HTML/CSS</span><span>80%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar" style="--skill-width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>FastAPI</span><span>85%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar" style="--skill-width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>RESTful APIs</span><span>85%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar" style="--skill-width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Git/GitHub</span><span>90%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar" style="--skill-width: 90%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: AI & Data -->
+                    <div class="skill-card">
+                        <h3>AI & Data</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>LangChain</span><span>85%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar" style="--skill-width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>LangGraph</span><span>75%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar" style="--skill-width: 75%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>RAG Architecture</span><span>85%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar" style="--skill-width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>MCP Servers</span><span>80%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar" style="--skill-width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Gemini API</span><span>80%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar" style="--skill-width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>TensorFlow</span><span>70%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar" style="--skill-width: 70%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>OpenCV</span><span>75%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar" style="--skill-width: 75%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>PostgreSQL/Neon</span><span>80%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar" style="--skill-width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>MongoDB</span><span>70%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar" style="--skill-width: 70%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Qdrant Cloud</span><span>75%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar" style="--skill-width: 75%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Process Section -->
+        <section id="process">
+            <div class="section-content">
+                <h2 class="section-title" style="margin: 0 auto 4rem auto; font-size: 2.5rem; line-height: 1.3;">Here's how I turn ideas into real-world applications.</h2>
+                <div class="process-container">
+                    <div class="process-step fade-in-section" style="transition-delay: 0.1s;">
+                        <div class="sticky-note note-1">
+                            <h3>1. Research</h3>
+                            <p>I start by understanding the problem, constraints, and what a working solution actually needs to do.</p>
+                        </div>
+                        <div class="process-connector-line"></div>
+                    </div>
+                    <div class="process-step fade-in-section" style="transition-delay: 0.3s;">
+                        <div class="sticky-note note-2">
+                            <h3>2. Architect</h3>
+                            <p>I design the system — data flow, APIs, and how each piece talks to the others — before writing implementation code.</p>
+                        </div>
+                        <div class="process-connector-line"></div>
+                    </div>
+                    <div class="process-step fade-in-section" style="transition-delay: 0.5s;">
+                        <div class="sticky-note note-3">
+                            <h3>3. Build</h3>
+                            <p>I build in focused increments, testing each piece as it comes together rather than all at once at the end.</p>
+                        </div>
+                        <div class="process-connector-line"></div>
+                    </div>
+                    <div class="process-step fade-in-section" style="transition-delay: 0.7s;">
+                        <div class="sticky-note note-4">
+                            <h3>04 Ship & Iterate</h3>
+                            <p>I deploy, monitor real usage, and refine based on what actually happens in production.</p>
+                            <!-- Playful annotation -->
+                            <div style="position: absolute; bottom: -30px; right: -20px; font-family: 'Caveat', 'Comic Sans MS', cursive; font-size: 1.3rem; color: var(--accent-color); transform: rotate(-10deg);">
+                                Ready to ship! 🚀
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Work Experience Section -->
+        <section id="experience" style="position: relative; background-color: var(--accent-color); padding-top: 8rem; border: none;">
+            <!-- Wave Divider -->
+            <div class="custom-shape-divider-top">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+
+            <div class="section-content">
+                <h2 class="section-title" style="color: #fff; margin-bottom: 1rem;">Work Experience</h2>
+                <p style="text-align: center; color: rgba(255,255,255,0.9); margin-bottom: 4rem; font-size: 1.1rem; max-width: 700px; margin-left: auto; margin-right: auto;">Hands-on roles where I applied engineering principles and built real-world tools.</p>
+                
+                <div class="exp-grid">
+                    <!-- Card 1 -->
+                    <div class="exp-card fade-in-section" style="transition-delay: 0.1s;">
+                        <h3>Junior Software Engineer Intern</h3>
+                        <div class="exp-meta">
+                            <span><i class="fa-solid fa-building"></i> Dr. Odin</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Panchkula, Haryana</span>
+                            <span><i class="fa-solid fa-calendar"></i> Jun 2026–Present</span>
+                        </div>
+                        <div class="exp-subsections" style="margin-top: 1.5rem;">
+                            <div style="margin-bottom: 1rem;">
+                                <h4 style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-color); margin-bottom: 0.5rem;">Highlights</h4>
+                                <ul style="list-style-type: disc; margin-left: 1.2rem; color: #444; font-size: 0.95rem; line-height: 1.6;">
+                                    <li>Built a RAG-based tool with a 3-provider LLM failover chain for drafting CDSCO regulatory responses.</li>
+                                    <li>Engineered a secure React Native + Express clinic app featuring BLE device capture and an e-prescription system.</li>
+                                    <li>Upgraded the LupusCalculator data infrastructure by migrating to a Neon (PostgreSQL) database and redeploying on Render.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-color); margin-bottom: 0.5rem;">Technologies</h4>
+                                <div class="project-tags" style="margin-bottom: 0;">
+                                    <span class="tag">RAG</span>
+                                    <span class="tag">React Native</span>
+                                    <span class="tag">Express</span>
+                                    <span class="tag">PostgreSQL</span>
+                                    <span class="tag">Render</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="exp-card fade-in-section" style="transition-delay: 0.3s;">
+                        <h3>AI Technical Trainee</h3>
+                        <div class="exp-meta">
+                            <span><i class="fa-solid fa-building"></i> Altruist Technologies</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Panchkula, Haryana</span>
+                            <span><i class="fa-solid fa-calendar"></i> Apr–Jun 2026</span>
+                        </div>
+                        <div class="exp-subsections" style="margin-top: 1.5rem;">
+                            <div style="margin-bottom: 1rem;">
+                                <h4 style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-color); margin-bottom: 0.5rem;">Highlights</h4>
+                                <ul style="list-style-type: disc; margin-left: 1.2rem; color: #444; font-size: 0.95rem; line-height: 1.6;">
+                                    <li>Engineered precise system prompts and multi-turn logic for production voice bots, mapping 10+ complex user intents across financial and retail workflows.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-color); margin-bottom: 0.5rem;">Technologies</h4>
+                                <div class="project-tags" style="margin-bottom: 0;">
+                                    <span class="tag">Prompt Engineering</span>
+                                    <span class="tag">Voice Bots</span>
+                                    <span class="tag">Conversational AI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wave Divider Bottom -->
+            <div class="custom-shape-divider-bottom">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- 6. Projects Section -->
+        <section id="projects">
+            <div class="section-content">
+                <h2 class="section-title">Projects.</h2>
+                <div class="projects-list">
+                    <!-- Project 1 -->
+                    <div class="project-card fade-in-section">
+                        <div class="project-number">01</div>
+                        <div class="project-content">
+                            <div style="margin-bottom: 0.5rem;"><span class="tag" style="background-color: var(--accent-color); color: #fff; border: none; padding: 0.2rem 0.8rem; font-size: 0.75rem;">Flagship Project</span></div>
+                            <h3>Autocare AI</h3>
+                            <div class="project-tags">
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">LangChain</span>
+                                <span class="tag">Gemini 2.5 Flash</span>
+                                <span class="tag">Qdrant Cloud</span>
+                                <span class="tag">MCP</span>
+                            </div>
+                            <p>An end-to-end conversational booking RAG pipeline with a 5-step booking state machine, averaging 6.34s latency across 31 test evaluations. Integrates MCP tool-calling for Google Calendar sync, with a fallback booking UI for resilience.</p>
+                            <div class="project-actions">
+                                <a href="https://github.com/Smeerdev/Autocare-AI" class="btn btn-outline btn-pill" target="_blank"><i class="fa-brands fa-github" style="margin-right: 8px;"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card fade-in-section">
+                        <div class="project-number">02</div>
+                        <div class="project-content">
+                            <h3>Answer Sheet Checking</h3>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">OpenCV</span>
+                                <span class="tag">TensorFlow</span>
+                                <span class="tag">Tkinter</span>
+                                <span class="tag">Flask</span>
+                            </div>
+                            <p>An MCQ grading system using a CNN trained on 10,200 labeled bubble-region images. Ships both a Tkinter desktop GUI and a Flask web API covering answer key upload, batch grading, and CSV/XLSX export.</p>
+                            <div class="project-actions">
+                                <a href="https://github.com/Smeerdev/Answer-Checking-System" class="btn btn-outline btn-pill" target="_blank"><i class="fa-brands fa-github" style="margin-right: 8px;"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card fade-in-section">
+                        <div class="project-number">03</div>
+                        <div class="project-content">
+                            <h3>RubiksCV</h3>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">C++17</span>
+                                <span class="tag">OpenCV</span>
+                                <span class="tag">Flask</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <p>A full-stack Rubik's Cube solver — webcam-based scanning paired with a custom C++17 two-phase Kociemba solver (2,100+ LOC, IDA* search over ~4M precomputed pruning-table entries), guiding users through physical moves with a manual-correction fallback.</p>
+                            <div class="project-actions">
+                                <a href="https://github.com/Smeerdev/Rubiks-cube-solver" class="btn btn-outline btn-pill" target="_blank"><i class="fa-brands fa-github" style="margin-right: 8px;"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Leadership & Achievements Section -->
+        <section id="leadership">
+            <div class="section-content">
+                <h2 class="section-title">Leadership & Achievements.</h2>
+                <div class="timeline">
+                    <!-- Entry 1 -->
+                    <div class="timeline-entry fade-in-section" style="transition-delay: 0.1s;">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="tag" style="display: inline-block; margin-bottom: 0.5rem;">Leadership</span>
+                            <h3>Team Lead</h3>
+                            <div class="timeline-meta">
+                                <span><i class="fa-solid fa-building"></i> Blue Skies: Solar for Everyone</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Patiala, Punjab</span>
+                                <span><i class="fa-solid fa-calendar"></i> Jan–May 2025</span>
+                            </div>
+                            <p>Led a 5-member team through systems-thinking prototyping and market research, ranking in the top 10% of 100+ competing teams.</p>
+                        </div>
+                    </div>
+
+                    <!-- Entry 2 -->
+                    <div class="timeline-entry fade-in-section" style="transition-delay: 0.3s;">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="tag" style="display: inline-block; margin-bottom: 0.5rem;">Achievement</span>
+                            <h3>200+ Algorithmic Challenges</h3>
+                            <div class="timeline-meta">
+                                <span><i class="fa-solid fa-code"></i> LeetCode</span>
+                                <span><i class="fa-solid fa-calendar"></i> Ongoing</span>
+                            </div>
+                            <p>Practiced 200+ algorithmic challenges, refining code efficiency, debugging, and computational thinking skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7.5. Soft Skills Section -->
+        <section id="soft-skills" class="fade-in-section" style="padding: 2rem 2rem 6rem 2rem; min-height: auto; border: none;">
+            <div class="section-content" style="max-width: 1000px; margin: 0 auto;">
+                <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">Soft Skills.</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; text-align: center;">
+                    <div style="background-color: rgba(255,255,255,0.02); padding: 2rem; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.05);">
+                        <h4 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 1.1rem;">Problem Solving</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0;">Breaking down complex issues into logical, scalable solutions.</p>
+                    </div>
+                    <div style="background-color: rgba(255,255,255,0.02); padding: 2rem; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.05);">
+                        <h4 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 1.1rem;">Adaptability</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0;">Quickly learning new tech stacks and pivoting when requirements change.</p>
+                    </div>
+                    <div style="background-color: rgba(255,255,255,0.02); padding: 2rem; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.05);">
+                        <h4 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 1.1rem;">Leadership</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0;">Guiding teams, taking ownership, and driving projects to successful completion.</p>
+                    </div>
+                    <div style="background-color: rgba(255,255,255,0.02); padding: 2rem; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.05);">
+                        <h4 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 1.1rem;">Time Management</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0;">Balancing parallel projects while delivering quality code on schedule.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Contact + Footer Section -->
+        <section id="contact-footer" style="position: relative; background-color: var(--accent-color); padding: 8rem 0 0 0; display: block; min-height: auto; border: none;">
+            <!-- Wave Divider Top -->
+            <div class="custom-shape-divider-top">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            
+            <div class="section-content fade-in-section" style="max-width: 800px; padding: 0 2rem; margin: 0 auto; text-align: center;">
+                <h2 class="section-title" style="color: #fff; margin-bottom: 2rem;">Let's Connect.</h2>
+                
+                <div class="connect-links" style="margin-top: 2rem; margin-bottom: 2rem;">
+                    <a href="https://www.linkedin.com/in/sameer-garg-239a40271/" target="_blank" class="btn btn-outline btn-pill" style="border-color: rgba(255,255,255,0.5); color: #fff;">
+                        <i class="fa-brands fa-linkedin" style="margin-right: 8px;"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/Smeerdev" target="_blank" class="btn btn-outline btn-pill" style="border-color: rgba(255,255,255,0.5); color: #fff;">
+                        <i class="fa-brands fa-github" style="margin-right: 8px;"></i> GitHub
+                    </a>
+                    <a href="mailto:sameergarg916@gmail.com" class="btn btn-outline btn-pill" style="border-color: rgba(255,255,255,0.5); color: #fff;">
+                        <i class="fa-solid fa-envelope" style="margin-right: 8px;"></i> sameergarg916@gmail.com
+                    </a>
+                    <a href="tel:+917009372705" class="btn btn-outline btn-pill" style="border-color: rgba(255,255,255,0.5); color: #fff;">
+                        <i class="fa-solid fa-phone" style="margin-right: 8px;"></i> Call Me
+                    </a>
+                </div>
+                
+            </div>
+
+            <!-- Wave Divider Bottom -->
+            <div class="custom-shape-divider-bottom" style="margin-top: 6rem;">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            
+            <!-- Footer Content (Black Background) -->
+            <div class="footer-wrapper" style="background-color: var(--bg-color); padding: 4rem 2rem 0 2rem; position: relative;">
+                <div class="footer-top">
+                    <div class="footer-info">
+                        <p class="footer-tag">Software Engineer &middot; GenAI & Full-Stack</p>
+                        <p class="footer-edu">Computer Engineering @ Thapar Institute of Engineering and Technology</p>
+                        <p class="footer-avail">Status: Open to opportunities</p>
+                    </div>
+                    <div class="footer-links">
+
+                        <a href="#hero" class="back-to-top"><i class="fa-solid fa-arrow-up"></i> Back to Top</a>
+                    </div>
+                </div>
+                
+                <div class="footer-marquee">
+                    <h1>SAMEER GARG</h1>
+                </div>
+            </div>
+        </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
